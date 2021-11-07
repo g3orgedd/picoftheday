@@ -50,28 +50,28 @@ body {
     color: #fc3d21;
 }
 @media (max-width: 1200px) {
-    .pic_container {
+    .pic-container {
         max-width: 970px;
     }
-    .pic_body_shown {
+    .pic-body-shown {
         max-width: 70%;
         font-size: 1.1rem;
     }
 }
 @media (max-width: 992px) {
-    .pic_container {
+    .pic-container {
         max-width: 750px;
     }
-    .pic_body_shown {
+    .pic-body-shown {
         max-width: 85%;
         font-size: 1.15rem;
     }
 }
 @media (max-width: 767px) {
-    .pic_container {
+    .pic-container {
         max-width: none;
     }
-    .pic_body_shown {
+    .pic-body-shown {
         max-width: 100%;
         text-align: left;
         font-size: 1.2rem;
