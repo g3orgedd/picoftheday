@@ -34,6 +34,11 @@ body {
     max-width: 100%;
     border-radius: 15px;
 }
+#pic_video {
+    width: 100%;
+    height: 375px;
+    border: none;
+}
 #pic_exp {
     margin: 25px 0;
     text-align: justify;
@@ -48,6 +53,9 @@ body {
 }
 #pic_download:hover {
     color: #fc3d21;
+}
+.pic-hidden {
+    display: none;
 }
 @media (max-width: 1200px) {
     .pic-container {
