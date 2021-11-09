@@ -22,7 +22,7 @@ function downloadPicture(mType, jsonRequest) {
     if (mType === 'video') {
         document.getElementById('pic_download').setAttribute('class', 'pic-hidden');
     } else {
-        document.getElementById('pic_download').setAttribute('href', jsonRequest); //.href = jsonRequest; //request.response['hdurl'];
+        document.getElementById('pic_download').setAttribute('href', jsonRequest);
     }
 }
 
