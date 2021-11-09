@@ -49,7 +49,7 @@ function getPicture(strFetch) {
                 }
 
                 mediaType(request.response['media_type'], request.response['url'])
-                downloadPicture(request.response['media_type'], request.response['url'])
+                downloadPicture(request.response['media_type'], request.response['hdurl'])
                 changeBodyClassName()
             } 
         }
