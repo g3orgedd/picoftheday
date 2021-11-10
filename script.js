@@ -18,9 +18,10 @@ function mediaType(mType, jsonRequest) {
     }
 }
 
-function downloadPicture(mType, jsonRequest) {
+function downloadPicture(mType, jsonRequest, copyright) {
     if (mType === 'video') {
         document.getElementById('pic_download').setAttribute('class', 'pic-hidden');
+        document.getElementById('pic_info').innerHTML = 'Video by ' + copyright;
     } else {
         document.getElementById('pic_download').setAttribute('href', jsonRequest);
     }
@@ -48,9 +49,9 @@ function getPicture(strFetch) {
                     document.getElementById('pic_info').innerHTML = 'Photo by ' + request.response['copyright'];
                 }
 
-                mediaType(request.response['media_type'], request.response['url'])
-                downloadPicture(request.response['media_type'], request.response['hdurl'])
-                changeBodyClassName()
+                mediaType(request.response['media_type'], request.response['url']);
+                downloadPicture(request.response['media_type'], request.response['hdurl'], request.response['copyright']);
+                changeBodyClassName();
             } 
         }
     };
