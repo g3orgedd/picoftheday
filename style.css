@@ -54,6 +54,9 @@ body {
 #pic_download:hover {
     color: #fc3d21;
 }
+#pic_info {
+    text-align: right;
+}
 .pic-hidden {
     display: none;
 }
