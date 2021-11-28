@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    strFetch = 'https://api.nasa.gov/planetary/apod?api_key=68XutEhNvRO6HYZVOIXu0ozddtbcuM0wufBDX2rV';
+    strFetch = 'https://api.nasa.gov/planetary/apod?api_key=' + secrets.APIKEY;
 
     getPicture(strFetch);
 });
