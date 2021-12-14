@@ -41,7 +41,7 @@ function getPicture(strFetch) {
             else {
                 document.getElementById('pic_title_h1').innerHTML = request.response['title'];
                 document.getElementById('pic_date').innerHTML = request.response['date'].replace(/-/gm, '.');
-                document.getElementById('pic_exp').innerHTML = request.response['explanation'];
+                document.getElementById('pic_exp').innerHTML = request.response['explanation'].replace(/--/gm, '—');
 
                 if (request.response['copyright'] == undefined) {
                     document.getElementById('pic_info').innerHTML = 'Unknown Author'
