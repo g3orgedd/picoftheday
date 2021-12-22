@@ -1,8 +1,8 @@
 body {
     padding: 0;
     margin: 0;
-    color: #fff;
-    background: #000;
+    color: #2D4263;
+    background: #191919;
     font-family: 'Satoshi', sans-serif;
 }
 .pic-container {
@@ -49,10 +49,7 @@ body {
 }
 #pic_download {
     text-decoration: none;
-    color: #0b3d91;
-}
-#pic_download:hover {
-    color: #fc3d21;
+    color: #C84B31;
 }
 #pic_info {
     text-align: right;
@@ -87,10 +84,19 @@ body {
         text-align: left;
         font-size: 1.2rem;
     }
+    #pic_exp {
+        margin: 15px 0;
+    }
+    #pic_date {
+        margin-bottom: 15px;
+    }
+    body {
+        background: #ECDBBA;
+    }
 }
 ::-webkit-scrollbar {
     width: 0;
 }
 ::selection {
-    background: #fc3d21;
+    background: #C84B31;
 }
